@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #4E5150;
+}
+
+
+
+.shopping {
+    width: 350px;
+    height: 489px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows : 20px 122px 20px 122px 100px auto;
+    grid-template-columns: 20px 124px 28px 124px auto;
+    margin-bottom: 35px;
+}
+
+.photo1 {
+    background-image: url('../img/photo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.photo2 {
+    background-image: url('../img/photo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+
+.desc1 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.desc2 {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+h3 {
+    font-size: 12px;
+    color: #4E5150;
+    margin-bottom: 0;
+}
+.sell-price {
+    display: flex;
+    align-items: center;
+}
+.descount {
+    font-size: 14px;
+    color: #F2994A;
+    padding-right: 25px;
+}
+.price {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+.cant {
+    width: 120px;
+    height: 50px;
+    border: solid 1px #828282;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 10px 21px auto 21px auto 21px 10px;
+    text-align: center;
+}
+.btn {
+    text-decoration: none;
+    width: 21px;
+    height: 21px;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 4px;
+    color: #828282;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.minus {
+    grid-column: 2/3;
+}
+.num {
+    grid-column: 4/5;
+}
+.plus {
+    grid-column: 6/7;
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 6/7;
+    grid-column: 2/5;
+    border-top: solid 1px #BDBDBD;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 7/8;
+    grid-column: 2/5;
+    border-top: solid 1px #BDBDBD;
+}
+
+.form {
+    width: 350px;
+}
+.form h2 {
+    font-size: 14px;
+}
+.form h2:nth-child(even) {
+    margin-top: 45px;
+}
+
+.form label {
+    font-size: 10px;
+}
+.form input {
+    width: 326px;
+    padding: 12px;
+    border-radius: 12px;
+    border: solid 1px #828282;
+}
+.empty {
+    background: #f8a4a4;
+    color: #BDBDBD;
+}
+
+#sltCountry , #zip {
+    width: 136px;
+    padding: 12px;
+    border-radius: 12px;
+    border: solid 1px #828282;
+}
+#sltCountry {
+    width: 162px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.flex2 {
+    display: flex;
+}
+#checkbox {
+    width: 20px;
+    position: relative;
+    top: 7px;
+    margin-bottom: 30px;
+}
+.flex2 p{
+    font-size: 10px;
+    width: 220px;
+}
+
+.flex3 {
+    display: flex;
+    justify-content: flex-end;
+}
+#btnSubmit {
+    width: 166px;
+    padding: 17px;
+    background: #F2994A;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #BDBDBD;
+    padding-top: 50px;
+}
+
+
+
+@media (min-width: 768px){
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 900px){
+    .shopping {
+        width: 383px;
+        height: 535px;
+        grid-template-rows : 30px 134px 20px 134px 100px auto;
+        grid-template-columns: 30px 136px 28px 150px auto;
+    }
+    h3 {
+        font-size: 16px;
+        margin-top: 7px;
+    }
+    .descount {
+        font-size: 16px;
+    }
+    .price {
+        font-size: 12px;
+    }
+    .cant {
+        width: 134px;
+        height: 52px;
+    }
+
+    .form {
+        width: 465px;
+    }
+    .form h2 {
+        font-size: 14px;
+    }
+    .form div {
+        padding-bottom: 5px;
+    }
+    .form label {
+        font-size: 12px;
+    }
+    .form input {
+        width: 439px;
+    }
+
+    #zip {
+        width: 191px;
+    }
+    #sltCountry {
+        width: 217px;
+    }
+}
+
+@media (min-width: 1024px){
+    header {
+        width: 950px;
+        margin: auto;
+    }
+    main{
+        width: 950px;
+        margin: auto;
+    }
+}
